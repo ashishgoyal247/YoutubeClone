@@ -1,0 +1,47 @@
+Component:
+Collection of Javascript functions that produce HTML. These components doesn't automatically
+get into HTML DOM.
+
+JSX:
+Javascript code that produces HTML. It looks like HTML butit gets transpiled by Babel to
+Javascript.
+
+ReactDOM is used to take the component and put it on the page.
+
+Two types of components are there:
+1. Functional component
+2. Class component
+
+Class Component:
+  Used when we want component to have some kind of record keeping. Ability to be aware of itself
+  and what's happened since it has been rendered. eg: If there is a search bar it needs some
+  functionality to tell other parts of app that user typed something.
+
+  All class components must have a render function which returns some JSX.
+
+Event Handling in React:
+  There are 2 steps in event handling:
+  1. Declare an event handler(Event handler are the functions which runs whenever en event occurs)
+  2. Pass the event handler to the element that want to monitir the event.
+
+Whenever we are writing JSX and we are using JS variables, wrap it with curly braces.
+
+State:
+  State is a plain JS object which that is used to record and react to user events. Each class
+  component has it own state object. Whenever a state changes it forces component and
+  component children's to rerender.
+
+  Except from constructor always use this.setState to change value of state.
+
+Note: Always return only one element in React at a time. You can wrap multiple elements in one
+      parent element.
+
+Controlled component:
+  Value of component is set by state.
+
+Downward Data Flow:
+  Most parent component should be responsible to fetch data.
+
+Whenever we use functional component we get props as arguments whereas in class components it
+is available as this.props .
+        

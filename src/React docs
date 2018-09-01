@@ -1,9 +1,0 @@
-Component:
-Collection of Javascript functions that produce HTML. These components doesn't automatically
-get into HTML DOM.
-
-JSX:
-Javascript code that produces HTML. It looks like HTML butit gets transpiled by Babel to
-Javascript.
-
-ReactDOM is used to take the component and put it on the page.
